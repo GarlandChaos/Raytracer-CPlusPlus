@@ -1,0 +1,102 @@
+begin stage 1
+	begin cam
+		fov: 30
+		eyeX: 0
+		eyeY: 0
+		eyeZ: 0
+	end cam
+
+    nlight 1
+    begin light0
+        position: 10.0 40.0 -20.0
+        color: 1.0 1.0 1.0
+		intensity: 1.0
+    end light0
+
+    nobjects 6
+    begin sphere0
+		id: 0
+        radius: 3.5
+        color: 0.0 1.0 1.0
+        position: 0.0 0.0 -50.0
+		ambient: 0.05 0.05 0.05
+        diffuse: 0.8 0.5 0.9
+		specular: 0.5 0.5 0.5
+		shininess: 50
+        reflection: 0.6
+        refraction: 0.0 
+    end sphere0
+	begin sphere1
+		id: 1
+        radius: 4.0
+        color: 1.0 0.0 0.0
+        position: 9.0 0.0 -40.0
+		ambient: 0.09 0.07 0.08
+        diffuse: 1.0 1.0 1.0
+		specular: 1.0 1.0 1.0
+		shininess: 200
+        reflection: 0.5
+        refraction: 0.0
+    end sphere1
+	begin sphere2
+		id: 2
+        radius: 2.5
+        color: 0.8 1.0 0.5
+        position: -8.0 -2.0 -50.0
+		ambient: 0.05 0.05 0.05
+        diffuse: 0.8 0.5 0.9
+		specular: 0.5 0.5 0.5
+		shininess: 50
+        reflection: 0.0
+        refraction: 0.0 
+    end sphere2
+	begin sphere3
+		id: 3
+        radius: 600.0
+        color: 0.5 1.0 0.5
+        position: 0.0 -610.0 -50.0
+		ambient: 0.05 0.05 0.05
+        diffuse: 0.8 0.5 0.9
+		specular: 0.5 0.5 0.5
+		shininess: 50
+        reflection: 0.0
+        refraction: 0.0
+    end sphere3
+	begin sphere4
+		id: 4
+        radius: 1.5
+        color: 1.0 0.0 1.0
+        position: -6.0 5.0 -55.0
+		ambient: 0.05 0.05 0.05
+        diffuse: 0.8 0.5 0.9
+		specular: 0.5 0.5 0.5
+		shininess: 50
+        reflection: 0.0
+        refraction: 0.0
+    end sphere4
+	begin sphere5
+		id: 5
+        radius: 4.0
+        color: 1.0 1.0 0.0
+        position: -20.0 2.0 -70.0
+		ambient: 0.05 0.05 0.05
+        diffuse: 0.8 0.5 0.9
+		specular: 0.5 0.5 0.5
+		shininess: 50
+        reflection: 0.0
+        refraction: 0.9
+    end sphere5
+end stage 1
+
+begin stage 3
+    program: rt
+end stage 3
+
+begin stage 4
+    nfilter 1
+	hdr2 0.5
+end stage 4
+
+begin stage 5
+    output: 800 600
+end stage 5

@@ -14,7 +14,6 @@ public:
 
 	Raytracer();
 	~Raytracer();
-	
 	glm::vec3 Raytrace(const Ray& ray, std::vector<Sphere*>& objects, const Light& light, glm::vec3& hitPoint, glm::vec3& hitPointNormal, const float Ia, const glm::vec3& ambColor, const int depth, const int maxDepth, const int id) const;
 	glm::vec3 RaytraceFlat(const Ray& ray, std::vector<Sphere*>& objects, const Light& light, glm::vec3& hitPoint, glm::vec3& hitPointNormal, const float Ia, const glm::vec3& ambColor, const int depth, const int id) const;
 	glm::vec3 RaytraceCellShading(const Ray& ray, std::vector<Sphere*>& objects, const Light& light, glm::vec3& hitPoint, glm::vec3& hitPointNormal, const float Ia, const glm::vec3& ambColor, const int depth, const int id, const sf::Color& borderColor) const;

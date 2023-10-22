@@ -21,7 +21,7 @@ public:
 	Light light;
 	float Ia = 1.0f; //ambient light intensity
 	float fov = 0.0f;
-	glm::vec3 eye;
+	glm::vec3 eye = glm::vec3(0.0f);
 	int maxDepth = 10;
 	int sX = 0;
 	int sY = 0;

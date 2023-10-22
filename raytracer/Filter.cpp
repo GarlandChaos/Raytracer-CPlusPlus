@@ -398,8 +398,6 @@ sf::Image* Filter::MixPerlinNoise(const sf::Image* img, const sf::Image* perlin,
 	sf::Image* noiseImg = new sf::Image();
 	noiseImg->create(sX, sY);
 
-	noise::module::Perlin myModule;
-
 	for (int i = 0; i < sX; i++) 
 	{
 		for (int j = 0; j < sY; j++) 

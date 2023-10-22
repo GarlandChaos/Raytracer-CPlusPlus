@@ -24,7 +24,5 @@ public:
 	Sphere();
 	Sphere(const int id, const glm::vec3& center, const double radius, const glm::vec3& color, const glm::vec3& ka, const glm::vec3& kd, const glm::vec3& ks, const int n, const double kr, const double kt);
 	~Sphere();
-
 	bool Hit(const Ray& ray, glm::vec3& hitP, glm::vec3& normal) const;
-
 };

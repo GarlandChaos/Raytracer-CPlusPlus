@@ -1,4 +1,4 @@
-# Raytracer CPlusPlus
+# Raytracer C++
 Raytracer with filters created in C++ with SFML, GLM and libnoise libraries.
 
 ## Usage
